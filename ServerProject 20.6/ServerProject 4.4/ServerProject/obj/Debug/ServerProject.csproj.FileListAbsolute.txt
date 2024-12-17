@@ -1,0 +1,7 @@
+C:\Users\Administrator\Downloads\ServerProject 19.6\ServerProject 4.4\ServerProject\bin\Debug\ServerProject.exe.config
+C:\Users\Administrator\Downloads\ServerProject 19.6\ServerProject 4.4\ServerProject\bin\Debug\ServerProject.exe
+C:\Users\Administrator\Downloads\ServerProject 19.6\ServerProject 4.4\ServerProject\bin\Debug\ServerProject.pdb
+C:\Users\Administrator\Downloads\ServerProject 19.6\ServerProject 4.4\ServerProject\obj\Debug\ServerProject.csprojAssemblyReference.cache
+C:\Users\Administrator\Downloads\ServerProject 19.6\ServerProject 4.4\ServerProject\obj\Debug\ServerProject.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Downloads\ServerProject 19.6\ServerProject 4.4\ServerProject\obj\Debug\ServerProject.exe
+C:\Users\Administrator\Downloads\ServerProject 19.6\ServerProject 4.4\ServerProject\obj\Debug\ServerProject.pdb
