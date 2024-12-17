@@ -1,0 +1,24 @@
+﻿<Window x:Class="ClientProject.Info"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientProject"
+        mc:Ignorable="d"
+        Title="Info" Height="450" Width="470">
+    <Grid>
+        <Label x:Name="name" FontFamily="Segoe UI Black" FontSize="35" Height="59" Content="Information- Animalovers" Margin="-1,-3,0.872,364.864"/>
+        <Label FontFamily="Segoe UI Black" FontSize="20" Margin="18,68,-18.128,-68.136">
+            <TextBlock>This project is made by Yamit Kfir.
+                <LineBreak/>
+                <LineBreak/> ID: 325712917
+                <LineBreak/> Class: יב7
+                <LineBreak/> School: גמנסיה גן נחום ראשון לציון
+                <LineBreak/> Teacher: אלכס 
+                <LineBreak/> Date: 14.5.2021
+                <LineBreak/> 
+                <LineBreak/> Thank you for using this app :)
+            </TextBlock>
+        </Label>
+    </Grid>
+</Window>

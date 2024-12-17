@@ -1,0 +1,31 @@
+﻿<Window x:Class="ClientProject.CreateAccount"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientProject"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="CreateAccount" Height="300" Width="400"
+        >
+    <Canvas>
+        <Image Source="/images/registration_pages.jpg" Stretch="UniformToFill" Height="271" Width="449" Canvas.Left="-15"/>
+
+        <Label Canvas.Left="225" Height="52" Width="115" FontFamily="Segoe UI Black" FontSize="30">signup</Label>
+        <Label Canvas.Left="130" Canvas.Top="119" Height="37" Width="68" FontFamily="Segoe UI Black" FontSize="16">name</Label>
+        <Label Canvas.Left="96" Canvas.Top="138" Height="36" Width="84" FontFamily="Segoe UI Black" FontSize="16">password</Label>
+        <Label Canvas.Left="121" Canvas.Top="180" Height="36" Width="104" FontFamily="Segoe UI Black" FontSize="16">family</Label>
+        <TextBox Name="name" Canvas.Left="252" Canvas.Top="123" Height="25" Width="98" materialDesign:HintAssist.Hint="first name"></TextBox>
+        <PasswordBox Name="password" Canvas.Left="231" Canvas.Top="143" materialDesign:HintAssist.Hint="password" Width="98"/>
+        <TextBox Name="family" Canvas.Left="199" Canvas.Top="184" Height="25" Width="98" materialDesign:HintAssist.Hint="family name"></TextBox>
+        <Button Name="signup" Canvas.Left="140" Canvas.Top="221" Height="40" Width="110" Click="Signup_Click">sign up</Button>
+        <Button Name="newfamily" FontSize="10" Canvas.Left="260" Canvas.Top="239" Height="22" Width="124" Click="Newfamily_Click">create a new family</Button>
+
+        <Button Click="Window_Closing" HorizontalAlignment="Right" Style="{StaticResource MaterialDesignFlatButton}">
+            <materialDesign:PackIcon Kind="Close"/>
+        </Button>
+        <Label Canvas.Left="81" Canvas.Top="164" Height="36" Width="99" FontFamily="Segoe UI Black" FontSize="10" Content="confirm password"/>
+        <PasswordBox x:Name="password_Copy" Canvas.Left="211" Canvas.Top="164" materialDesign:HintAssist.Hint="password" Width="98"/>
+
+    </Canvas>
+</Window>

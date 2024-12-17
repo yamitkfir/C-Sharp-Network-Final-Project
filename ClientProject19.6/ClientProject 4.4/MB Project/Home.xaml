@@ -1,0 +1,98 @@
+﻿<Window x:Class="ClientProject.Home"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientProject"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="home" 
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+
+        <Label Name="templ"></Label>
+
+        <Image Source="/images/background_home.jpg" Stretch="UniformToFill" Grid.ColumnSpan="5" Grid.RowSpan="5"/>
+        <Image Source="images/background_label_home.jpg" Stretch="UniformToFill" Grid.Row="0" Grid.ColumnSpan="5"/>
+
+        <Label Name="title" FontFamily="Segoe UI Black" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4"/>
+        <Label Name="title2" FontFamily="Segoe UI Black" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0"  Grid.Row="4" Grid.ColumnSpan="4"/>
+
+        <Label Name="nameuser" FontFamily="Segoe UI Black" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Column="0" Grid.Row="2"/>
+        <Label Name="namefamily" FontFamily="Segoe UI Black" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Column="0"  Grid.Row="2"/>
+
+        <Button Name="newAnimal" FontFamily="Segoe UI Black" FontSize="14" Grid.Column="3" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Bottom" Click="NewAnimal_Click">add a new animal</Button>
+        <Button Name="editUser" FontFamily="Segoe UI Black" FontSize="14" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top" Click="EditUser_Click">edit user information</Button>
+        <Button Name="editfamily" FontFamily="Segoe UI Black" FontSize="13" Grid.Column="1" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Bottom" Click="EditFamily_Click">edit family information</Button>
+        <Label Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Content="upload your image to see it :)"/>
+
+        <Border CornerRadius="80" BorderBrush="Gray" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2">
+            <Image Name="userimage"></Image>
+        </Border>
+        <Label Grid.Column="0" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Content="upload your image to see it :)"/>
+        <Border CornerRadius="80" BorderBrush="Gray" Grid.Row="3" Grid.Column="0" Grid.RowSpan="2">
+            <Image Name="familyimage"></Image>
+        </Border>
+
+        <Button x:Name="animal1" IsEnabled="False" Grid.Column="1" Grid.Row="1" Click="EditAnimal_Click" Width="Auto" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Image x:Name="image1" Stretch="UniformToFill"/>
+        </Button>
+        <Button x:Name="animal2" IsEnabled="False" Grid.Column="2" Grid.Row="1" Click="EditAnimal_Click" Width="Auto" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Image x:Name="image2" Stretch="UniformToFill"/>
+        </Button>
+        <Button x:Name="animal3" IsEnabled="False" Grid.Column="3" Grid.Row="1" Click="EditAnimal_Click" Width="Auto" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Image x:Name="image3" Stretch="UniformToFill"/>
+        </Button>
+        <Button x:Name="animal4" IsEnabled="False" Grid.Column="1" Grid.Row="2" Click="EditAnimal_Click" Width="Auto" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Image x:Name="image4" Stretch="UniformToFill"/>
+        </Button>
+        <Button x:Name="animal5" IsEnabled="False" Grid.Column="2" Grid.Row="2" Click="EditAnimal_Click" Width="Auto" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Image x:Name="image5" Stretch="UniformToFill"/>
+        </Button>
+        <Button x:Name="animal6" IsEnabled="False" Grid.Column="3" Grid.Row="2" Click="EditAnimal_Click" Width="Auto" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Image x:Name="image6" Stretch="UniformToFill"/>
+        </Button>
+        <Button x:Name="animal7" IsEnabled="False" Grid.Column="1" Grid.Row="3" Click="EditAnimal_Click" Width="Auto" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Image x:Name="image7" Stretch="UniformToFill"/>
+        </Button>
+        <Button x:Name="animal8" IsEnabled="False" Grid.Column="2" Grid.Row="3" Click="EditAnimal_Click" Width="Auto" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Image x:Name="image8" Stretch="UniformToFill"/>
+        </Button>
+        <Button x:Name="animal9" IsEnabled="False" Grid.Column="3" Grid.Row="3" Click="EditAnimal_Click" Width="Auto" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Image x:Name="image9" Stretch="UniformToFill"/>
+        </Button>
+        <!-- now buttons to animals -->
+        <Label Name="nameanimal1" Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center" Content="" FontFamily="Segoe UI Black" FontSize="25"></Label>
+        <Label Name="nameanimal2" Grid.Column="2" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center" Content="" FontFamily="Segoe UI Black" FontSize="25"></Label>
+        <Label Name="nameanimal3" Grid.Column="3" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center" Content="" FontFamily="Segoe UI Black" FontSize="25"></Label>
+        <Label Name="nameanimal4" Grid.Column="1" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Center" Content="" FontFamily="Segoe UI Black" FontSize="25"></Label>
+        <Label Name="nameanimal5" Grid.Column="2" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Center" Content="" FontFamily="Segoe UI Black" FontSize="25"></Label>
+        <Label Name="nameanimal6" Grid.Column="3" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Center" Content="" FontFamily="Segoe UI Black" FontSize="25"></Label>
+        <Label Name="nameanimal7" Grid.Column="1" Grid.Row="3" VerticalAlignment="Top" HorizontalAlignment="Center" Content="" FontFamily="Segoe UI Black" FontSize="25"></Label>
+        <Label Name="nameanimal8" Grid.Column="2" Grid.Row="3" VerticalAlignment="Top" HorizontalAlignment="Center" Content="" FontFamily="Segoe UI Black" FontSize="25"></Label>
+        <Label Name="nameanimal9" Grid.Column="3" Grid.Row="3" VerticalAlignment="Top" HorizontalAlignment="Center" Content="" FontFamily="Segoe UI Black" FontSize="25"></Label>
+
+        <!-- <Button Name="refresh" FontFamily="Segoe UI Black" FontSize="14" Grid.Column="3" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Refresh_Click">Refresh page</Button> -->
+
+        <Button Click="bye" HorizontalAlignment="Left" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFlatButton}">
+            <materialDesign:PackIcon Kind="Close"/>
+        </Button>
+
+        <!-- <Button Name="return" Click="Return_Click" Content="return to login" VerticalAlignment="Top" HorizontalAlignment="Right" Width="140"></Button> -->
+
+    </Grid>
+</Window>

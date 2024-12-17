@@ -1,0 +1,41 @@
+﻿<Window x:Class="ClientProject.CreateAnimal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientProject"
+        mc:Ignorable="d"
+        Title="CreateAnimal" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Column="1" Grid.Row="0" FontFamily="Segoe UI Black" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center" Content="CREATE ANIMAL"/>
+        <Label FontFamily="Segoe UI Black" FontSize="30" Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Bottom">name of the new animal:</Label>
+        <Label FontFamily="Segoe UI Black" FontSize="30" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Bottom">name of the new animal:</Label>
+        <ComboBox Name="type" FontFamily="Segoe UI Black" FontSize="15" Grid.Row="2" Grid.Column="2" VerticalAlignment="Bottom">
+            <ComboBoxItem Content="Dog" />
+            <ComboBoxItem Content="Cat" />
+            <ComboBoxItem Content="Horse" />
+            <ComboBoxItem Content="Cow" />
+            <ComboBoxItem Content="Pig" />
+            <ComboBoxItem Content="Snake" />
+            <ComboBoxItem Content="Bird" />
+            <ComboBoxItem Content="Fish" />
+            <ComboBoxItem Content="Unspecified" />
+        </ComboBox>
+        <TextBox Name="name" Grid.Column="2" Grid.Row="1" VerticalAlignment="Bottom"></TextBox>
+
+        <Button Name="save" Grid.Column="1" Grid.Row="3" Click="Save_Click">save animal</Button>
+
+    </Grid>
+</Window>

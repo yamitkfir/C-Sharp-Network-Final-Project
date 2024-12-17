@@ -1,0 +1,24 @@
+﻿<Application x:Class="ClientProject.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ClientProject"
+             xmlns:local1="clr-namespace:App"
+             StartupUri="MainWindow.xaml"
+             ShutdownMode="OnExplicitShutdown"
+             >
+    
+    <Application.Resources>
+
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!-- this lines are useful for the materialdesign pack- a pack that helps design a better window -->
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source= "pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.Purple.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Blue.xaml" />
+                
+                
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
